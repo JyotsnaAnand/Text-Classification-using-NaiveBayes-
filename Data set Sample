@@ -1,0 +1,20 @@
+- DATASET FILE FORMAT:
+A text file train-text.txt with a single training instance (hotel review) per line. 
+The first token in the each line is a unique 20-character alphanumeric identifier, which is followed by the text of the review.
+
+A label file train-labels.txt with labels for the corresponding reviews. 
+Each line consists of three tokens: a unique 20-character alphanumeric identifier corresponding to a review, a label truthful or deceptive, and a label positive or negative.
+
+
+- DATASET SAMPLE: 
+train-text.txt:
+0117CBUj98k8MKQp8svI The Hyatt Regency Chicago is a wonderful hotel. :) Me and my husband recently stayed there on a summer vacation, and it couldn't have been better! The staff was very polite and helpful, and the rooms were very clean, and they had some of the best beds I've ever slept on! Not to mention the view was amazing! If I had to rate this hotel I'd definitely give it five star, next time I'm in town I will most definitely stay there again!
+02GRaAeUBioqRjtkICm3 The elevator system was impossible. It seems they were trying to improve it but only made it worse. Many people waited 15+ minutes and some bailed out to the stair wells. It happened several times. I had read about it before booking but guess I didn't take it seriously. It'd be a deal breaker for any future return unless I heard clearly it was improved. Also, I always think it's lame that you have to pay extra for WiFi. Area recommendations North Michigan Avenue and Lake front areas are best.
+02kds25RFtpa6DJL21y6 Chicago is one of our favorite cities to visit. Some friends suggested trying The Talbott. I'm delighted we took them up. The Talbott is a great "small" hotel a block and a half off of Michigan Avenue near the Four Seasons, Drake and Westin. The concierge staff was most helpfull. Gene and Stephanie took great care of us. The rooms were spacious and very fresh. The elevators could be a bit slow at times. Aside from the construction next door, our stay was perfect. Bice now runs the hotel restaurant. We enjoyed having breakfast there. We will stay there again. 
+051iyY6PUKLzJbPalu9K Stayed here with friends for a long weekend in August and loved the hotel. Enjoyed the free nightly wine happy hour, and the accomodations were quite nice (our beds were very soft and comfortable). We had excellent views of the river from our rooms. The location was wonderful for seeing the sights around town, with easy access to public transportation nearby. My friends actually received the goldfish upon request, which they enjoyed. Some noise could be heard from rooms nearby or above, but it was minimal. Price seemed very resonable to us for the location. Will certainly return to the Windy City and plan on staying here again. 
+
+train-labels.txt: 
+0117CBUj98k8MKQp8svI deceptive positive
+02GRaAeUBioqRjtkICm3 truthful negative
+02kds25RFtpa6DJL21y6 truthful positive
+051iyY6PUKLzJbPalu9K truthful positive
